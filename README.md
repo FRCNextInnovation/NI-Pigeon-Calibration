@@ -33,3 +33,15 @@
 - 温度变化会极大程度上影响陀螺仪的零飘值，同时也在一定程度上会对加速计和地磁计的测量结果造成影响。最好且唯一的解决方法是为Pigeon重新进行温度标定，以调整温度补偿算法的参数。详情请看[Pigeon-IMU的温度标定](#Pigeon-IMU的温度标定)。
 
 ## Pigeon-IMU的温度标定
+
+1. 使用 VSCode 打开同目录下的 "**Pigeon-Temperature-Calibration-Code**" 项目文件夹，并烧录代码。此处不再赘述配置项目文件夹的具体方法。
+
+2. 打开 Driver Station 与 ShuffleBoard，观察 ShuffleBoard 中 Pigeon 的温度曲线，使其温度冷却至30℃以下。
+
+3. 待 Pigeon 冷却到30℃以下后，通过 Driver Station 使机器人进入 "Test" 模式，然后使用日光灯照射 Pigeon 背面，之后程序将开始检测温度变化对 Pigeon 解算出的 Fused Heading 的值产生的影响(如图为 Pigeon 背面，通过日光灯照射，使 Pigeon 的表面温度依次经过30℃和60℃)。
+
+   <img src="./assets/pigeon-lamp.png" style="zoom: 67%;" />
+
+4. 等待检测结束后，令Pigeon冷却至30℃以下。
+
+5. 待Pigeon冷却到30℃以下后，通过Driver Station使机器人进入 "Autonomous" 模式，之后 Pigeon 将进入到温度标定模式。使用日光灯照射 Pigeon 背面。
