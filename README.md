@@ -16,7 +16,7 @@
 ## 目录
 
 - [NI-Pigeon-Calibration](#NI-Pigeon-Calibration)
-  - [影响Pigeon-IMU零飘或测算精准度的因素](@影响Pigeon-IMU零飘或测算精准度的因素)
+  - [影响Pigeon-IMU零飘或测算精准度的因素](#影响Pigeon-IMU零飘或测算精准度的因素)
   - [Pigeon-IMU的温度标定](#Pigeon-IMU的温度标定)
 
 ## 影响Pigeon-IMU零飘或测算精准度的因素
